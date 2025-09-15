@@ -199,6 +199,65 @@ cython_debug/
 #  exclude from AI features like autocomplete and code analysis. Recommended for sensitive data
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
+
+# ------------------------------
+# C/C++ & CMake build artifacts
+# ------------------------------
+
+# Common build directories
+build/
+Build/
+cmake-build-*/
+out/
+bin/
+lib/
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+Testing/
+_deps/
+Makefile
+*.ninja
+.ninja_deps
+.ninja_log
+compile_commands.json
+
+# Object and library files
+*.o
+*.obj
+*.lo
+*.la
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+*.pdb
+*.ilk
+
+# macOS & debug bundles
+*.dSYM/
+.DS_Store
+
+# VS Code (uncomment if you don't want to track settings)
+# .vscode/
+
+# ------------------------------
+# Project data/artifacts
+# ------------------------------
+
+# Ray tracing outputs (keep source small); adjust if you want to track results
+Try-ray-tracing/**/image.ppm
+Try-ray-tracing/**/images/
+
+.cursorignore
 .cursorindexingignore
 
 # Marimo

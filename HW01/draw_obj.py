@@ -71,9 +71,8 @@ def rotate_vertices_around_z(vertices: np.ndarray, angle: float) -> np.ndarray:
 if __name__ == "__main__":
     # 基于脚本位置构造稳定路径，避免相对路径受运行目录影响
     # 可在下方三者中任选其一
-    obj_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "white_oak.obj"))
-    # obj_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "teapot.obj"))
-    # obj_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "bunny.obj"))
+    obj_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data_obj", "white_oak", "white_oak.obj"))
+    # obj_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data_obj", "bunny.obj"))
     raw_vertices = get_vertices_from_obj(obj_path)
     raw_vertices = normalize_vertices(raw_vertices)
 
